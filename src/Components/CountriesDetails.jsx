@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 const CountriesDetails = ({ countries }) => {
-  const [thisCountry, setThisCountry] = useState(null);
+  const [thisCountry, setThisCountry] = useState();
 
   const { countryId } = useParams();
 
@@ -41,7 +41,6 @@ const CountriesDetails = ({ countries }) => {
                         return (
                           <li key={border}>
                             <Link
-                              className="list-group-item list-group-item-action"
                               to={`/${border}`}
                             >
                               {findCountry(border).name.common}

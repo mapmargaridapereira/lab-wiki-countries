@@ -31,7 +31,7 @@ function App() {
     { countries ? 
     <div className="row">
     
-    <CountriesList countries={countries} /> 
+    <CountriesList/> 
 {/*     <Routes>  
       <Route
         path="/:countryId" element={<CountriesDetails countries= {countries} />} />
